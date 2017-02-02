@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<!-- 配置数据源 -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName"
+			value="com.mysql.jdbc.Driver">
+		</property>
+		<property name="url" value="jdbc:mysql://localhost:3306/myssh">
+		</property>
+		<property name="username" value="root"></property>
+		<property name="password" value="123456"></property>
+	</bean>
+	
+	<!-- 获取Hibernate的sessionFactory对象 -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+				</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>com/hzboy/orm/User.hbm.xml</value>
+				<value>com/hzboy/orm/Post.hbm.xml</value>
+				<value>com/hzboy/orm/Reply.hbm.xml</value>
+				<value>com/hzboy/orm/Product.hbm.xml</value>
+			</list>
+		</property>
+	</bean>
+	
+	
+	<bean id="userAct" class="com.hzboy.action.UserAction" scope="prototype">
+		<property name="userService" ref="userService"></property>
+	</bean>
+	
+	<bean id="postAct" class="com.hzboy.action.PostAction" scope="prototype">
+		<property name="userService" ref="userService"></property>
+	</bean>
+	
+	<bean id="replyAct" class="com.hzboy.action.ReplyAction" scope="prototype">
+		<property name="userService" ref="userService"></property>
+	</bean>
+	
+	<bean id="productAct" class="com.hzboy.action.ProductAction" scope="prototype">
+		<property name="userService" ref="userService"></property>
+	</bean>
+	
+	
+	<bean id="userService" class="com.hzboy.service.ManagerService">
+		<property name="dao" ref="dao"></property>
+	</bean>
+	
+	<bean id="dao" class="com.hzboy.dao.BaseDao">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+</beans>

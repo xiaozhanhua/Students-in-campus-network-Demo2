@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" 
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.objectFactory" value="spring" />
+	<package name="myApp" extends="struts-default">
+	
+	<!--用户-->
+		<action name="login" class="userAct" method="doLogin">
+			<result name="input">/login.jsp</result>
+			<result name="success">/index.jsp</result>
+		</action>
+		
+		<action name="register" class="userAct" method="doAdd">
+			<result name="addUser">/register.jsp</result>
+			<result name="success">/login.jsp</result>
+		</action>
+		
+		<!--论坛-->
+		<action name="postAction" class="postAct" method="doAdd">
+			<result name="addpost">/post.jsp</result>
+			<result name="success">/post.jsp</result>
+		</action>
+		
+		<action name="replyAction" class="replyAct" method="doAdd">
+			<result name="addReply">/post.jsp</result>
+			<result name="success">/post.jsp</result>
+		</action>
+		
+		<!--二手市场的 -->
+		<action name="productAction" class="productAct" method="doAdd">
+			<!-- fileUpload拦截器配置 -->
+		<interceptor-ref name="fileUpload">
+			<!-- 设置上传文件的最大字节数 -->
+			<param name="maximumSize">10000000</param>
+			<!-- 设置文件上传类型 -->
+			<param name="allowdTypes">
+				image/gif,image/png,image/jpeg,image/jpg,image/pjpeg
+			</param>
+		</interceptor-ref>
+		<!-- 设置上传文件保存的文件夹 -->
+		<interceptor-ref name="defaultStack" />
+			<param name="savePath">/save</param>
+			<result name="addproduct">/product.jsp</result>
+			<result name="success">/product.jsp</result>
+		</action>
+		
+		<action name="query" class="postAct" method="doQuery">
+			<result name="success">/post.jsp</result>
+		</action>
+		
+		<action name="queryreply" class="replyAct" method="doQuery">
+			<result name="success">/post.jsp</result>
+		</action>
+		
+		<action name="productquery" class="productAct" method="doQuery">
+			<result name="success">/product.jsp</result>
+		</action>
+		
+		<action name="showpost" class="postAct" method="doShow">
+			<result name="mypost">/m_post.jsp</result>
+		</action> 
+		
+		<action name="showproduct" class="productAct" method="doShow">
+			<result name="everyPost">/m_product.jsp</result>
+		</action> 
+	</package>
+</struts>    

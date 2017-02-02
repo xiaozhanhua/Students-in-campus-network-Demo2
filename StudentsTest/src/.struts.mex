@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="myApp" location="23,26" size="677,94">
+    <action name="userManagerAct" location="19,37" size="210,41">
+      <result name="login">
+        <resourceEdge source="login" routing="0" target="index.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="index.jsp" path="/index.jsp" location="30,177" size="150,55" />
+</Struts2Diagram>
+
