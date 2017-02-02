@@ -17,6 +17,8 @@
 
 ![](http://okr6bfdit.bkt.clouddn.com/6.%E5%8F%91%E5%B8%83%E5%B8%96%E5%AD%90.png)
 
+![](http://okr6bfdit.bkt.clouddn.com/7.%E4%BA%8C%E6%89%8B%E5%B8%82%E5%9C%BA%E9%83%A8%E5%88%86.png)
+
 ![](http://okr6bfdit.bkt.clouddn.com/8.%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5.png)
 
 ![](http://okr6bfdit.bkt.clouddn.com/9.%E5%8F%91%E5%B8%83%E4%BA%A7%E5%93%81.png)
