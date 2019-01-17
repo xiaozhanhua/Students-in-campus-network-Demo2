@@ -7,18 +7,18 @@
 #### 登录注册：实现用户帐号校验
 
 ### 下面看效果截图
-![](http://okr6bfdit.bkt.clouddn.com/1.%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2.png)
+![](http://studentcampus.xiaozhanhua/1.%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2.png)
 
-![](http://okr6bfdit.bkt.clouddn.com/2.%E6%B3%A8%E5%86%8C%E9%A1%B5%E9%9D%A2.png)
+![](http://studentcampus.xiaozhanhua/2.%E6%B3%A8%E5%86%8C%E9%A1%B5%E9%9D%A2.png)
 
-![](http://okr6bfdit.bkt.clouddn.com/4.%E8%AE%BA%E5%9D%9B%E7%A4%BE%E5%8C%BA.png)
+![](http://studentcampus.xiaozhanhua/4.%E8%AE%BA%E5%9D%9B%E7%A4%BE%E5%8C%BA.png)
 
-![](http://okr6bfdit.bkt.clouddn.com/5.%E5%B8%96%E5%AD%90%E8%AF%A6%E6%83%85%E9%A1%B5.png)
+![](http://studentcampus.xiaozhanhua/5.%E5%B8%96%E5%AD%90%E8%AF%A6%E6%83%85%E9%A1%B5.png)
 
-![](http://okr6bfdit.bkt.clouddn.com/6.%E5%8F%91%E5%B8%83%E5%B8%96%E5%AD%90.png)
+![](http://studentcampus.xiaozhanhua/6.%E5%8F%91%E5%B8%83%E5%B8%96%E5%AD%90.png)
 
-![](http://okr6bfdit.bkt.clouddn.com/7.%E4%BA%8C%E6%89%8B%E5%B8%82%E5%9C%BA%E9%83%A8%E5%88%86.png)
+![](http://studentcampus.xiaozhanhua/7.%E4%BA%8C%E6%89%8B%E5%B8%82%E5%9C%BA%E9%83%A8%E5%88%86.png)
 
-![](http://okr6bfdit.bkt.clouddn.com/8.%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5.png)
+![](http://studentcampus.xiaozhanhua/8.%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5.png)
 
-![](http://okr6bfdit.bkt.clouddn.com/9.%E5%8F%91%E5%B8%83%E4%BA%A7%E5%93%81.png)
+![](http://studentcampus.xiaozhanhua/9.%E5%8F%91%E5%B8%83%E4%BA%A7%E5%93%81.png)
